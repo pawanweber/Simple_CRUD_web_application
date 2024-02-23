@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog CRUD</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Blog Posts</h1>
+    </header>
+    <main>
+        <ul id="posts-list" class="post"></ul>
+        
+        <h2>Add New Post</h2>
+        <form id="add-post-form">
+            <label for="title">Title:</label><br>
+            <input type="text" id="title" name="title" required><br>
+            <label for="content">Content:</label><br>
+            <textarea id="content" name="content" required></textarea><br>
+            <label for="author">Author:</label><br>
+            <input type="text" id="author" name="author" required><br>
+            <label for="publication_date">Publication Date:</label><br>
+            <input type="date" id="publication_date" name="publication_date" required><br><br>
+            <button type="submit" class="post-btn">Add Post</button>
+        </form>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
